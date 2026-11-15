@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f5ef">
+<title>日常日本語｜單字練習</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+TC:wght@400;500;600;700&display=swap');
+:root{--paper:#f7f5ef;--ink:#28312d;--muted:#777d74;--green:#526e5d;--line:#deded4;--orange:#c27653;--pale:#e9eee8}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Noto Serif TC',serif}.wrap{max-width:1080px;margin:auto;padding:28px clamp(18px,5vw,64px)}header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:17px}.brand{font-size:13px;letter-spacing:.13em;color:var(--green)}.label,.eyebrow{font:11px 'DM Mono',monospace;letter-spacing:.14em;color:var(--orange)}main{padding:54px 0}.hero{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:30px}h1{font-size:clamp(30px,5vw,48px);font-weight:500;margin:8px 0}.intro{max-width:350px;color:var(--muted);font-size:13px;line-height:1.9}.unitbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}.tabs{display:flex;gap:8px;flex-wrap:wrap}.tab{border:1px solid var(--line);background:transparent;padding:9px 14px;color:var(--muted);cursor:pointer;font:12px inherit}.tab.active{background:var(--green);border-color:var(--green);color:white}.count{color:var(--muted);font:11px 'DM Mono',monospace}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.word{min-height:210px;border:1px solid var(--line);background:#fffefa;padding:23px;display:flex;flex-direction:column;position:relative;transition:.2s}.word:hover{transform:translateY(-3px);border-color:#a7b3a5}.illustration{height:96px;width:100%;display:grid;place-items:center;margin:-5px 0 15px;border-radius:4px;background:linear-gradient(135deg,#f1eee5,#e8eee7)}.illustration img{width:84px;height:84px;object-fit:contain}.kanji{margin-top:7px;color:#536a59;font-size:14px}.kanji em{color:var(--muted);font-style:normal;font-size:11px}.memory{margin-top:12px;padding:9px 10px;background:#f6f2e9;border-left:2px solid var(--orange);font-size:11px;line-height:1.7;color:#626a60}.memory b{color:var(--orange);font-weight:500;margin-right:5px}.word{min-height:300px}.lesson-tag{margin:-10px 0 10px;color:var(--green);font:10px 'DM Mono',monospace;letter-spacing:.08em}.jp{font:600 29px 'Noto Sans JP',sans-serif;letter-spacing:.04em}.kana{font:12px 'DM Mono',monospace;color:var(--orange);margin-top:7px}.meaning{margin-top:23px;font-size:15px}.example{margin-top:auto;padding-top:17px;color:var(--muted);font:13px 'Noto Sans JP',sans-serif}.example span{display:block;margin-top:5px;font:12px 'Noto Serif TC',serif}.sound{position:absolute;right:16px;top:15px;border:1px solid var(--line);background:var(--paper);width:32px;height:32px;border-radius:50%;cursor:pointer;color:var(--green)}.practice{margin-top:28px;padding:20px 22px;border:1px solid #d5ded4;background:var(--pale);display:flex;justify-content:space-between;align-items:center;gap:18px}.practice h2{font-size:16px;font-weight:500;margin:0 0 6px}.practice p{font-size:12px;color:var(--muted);margin:0}.quiz{border:0;background:var(--green);color:white;padding:11px 18px;cursor:pointer;font:12px inherit;white-space:nowrap}.quiz:hover{background:#3e5848}footer{border-top:1px solid var(--line);padding-top:15px;color:#92968d;font:10px 'DM Mono',monospace;display:flex;justify-content:space-between}@media(max-width:720px){.hero{display:block}.intro{margin-top:10px}.cards{grid-template-columns:repeat(2,1fr)}}@media(max-width:480px){.wrap{padding-top:18px}.cards{grid-template-columns:1fr}.word{min-height:185px}main{padding-top:36px}.practice{align-items:flex-start;flex-direction:column}.quiz{width:100%}}
+</style></head>
+<body><div class="wrap"><header><div class="brand">ことばのノート　／　日常日本語</div><div class="label">JAPANESE WORDS · 01</div></header><main><div class="hero"><div><div class="eyebrow">はじめての日本語　—　單元 01</div><h1>每天一點，<br>把日文放進日常。</h1></div><p class="intro">從生活中最常遇見的詞彙開始。聽讀音、看例句，慢慢累積自己的日語感。</p></div><div class="unitbar"><nav class="tabs" aria-label="課次分類"><button class="tab active" data-group="all">全部</button><button class="tab" data-group="l1">第一課</button><button class="tab" data-group="l2">第二課</button><button class="tab" data-group="l34">第三・四課</button><button class="tab" data-group="l4">第四課</button><button class="tab" data-group="l5">第五課</button></nav><div class="count" id="count">LESSON · P.08–27</div></div><section class="cards" id="cards" aria-live="polite"></section><section class="practice"><div><h2>今日小練習</h2><p id="prompt">點一下卡片上的喇叭，聽聽看日文怎麼念。</p></div><button class="quiz" id="quiz">隨機抽一個單字 ↗</button></section><p class="intro" style="margin:20px 0 0;font-size:11px">詞彙依講義課次與頁碼分類：第一課第 8–11 頁、第二課第 12–15 頁、第三／四課日期時間第 16–21 頁、第四課第 22–24 頁、第五課第 25–27 頁。</p></main><footer><span>ことばのノート　・　單字練習室</span><span>插畫：OpenMoji · CC BY-SA 4.0</span></footer></div>
+<script>
+const words=[
+{jp:'はじめまして',lesson:'l1',kanji:'初めまして',kana:'hajimemashite',meaning:'初次見面',group:'greeting',ex:'はじめまして。林です。',zh:'初次見面，我姓林。'},
+{jp:'よろしくお願いします',lesson:'l1',kanji:'宜しくお願いします（較少用）',kana:'yoroshiku onegaishimasu',meaning:'請多多指教',group:'greeting',ex:'どうぞよろしくお願いします。',zh:'請多多指教。'},
+{jp:'すみません',lesson:'l1',kanji:'済みません（較少用）',kana:'sumimasen',meaning:'不好意思；對不起',group:'greeting',ex:'すみません、駅はどこですか。',zh:'不好意思，車站在哪裡？'},
+{jp:'ありがとうございます',lesson:'l1',kanji:'有難うございます（較少用）',kana:'arigatō gozaimasu',meaning:'謝謝您',group:'greeting',ex:'ありがとうございます。',zh:'非常謝謝您。'},
+{jp:'わたし',lesson:'l1',kanji:'私',kana:'watashi',meaning:'我',group:'people',ex:'わたしは学生です。',zh:'我是學生。'},
+{jp:'せんせい',lesson:'l1',kanji:'先生',kana:'sensei',meaning:'老師；先生',group:'people',ex:'先生、これは何ですか。',zh:'老師，這是什麼？'},
+{jp:'がくせい',lesson:'l1',kanji:'学生',kana:'gakusei',meaning:'學生',group:'people',ex:'わたしは学生です。',zh:'我是學生。'},
+{jp:'ともだち',lesson:'l1',kanji:'友達',kana:'tomodachi',meaning:'朋友',group:'people',ex:'友だちと学校へ行きます。',zh:'和朋友去學校。'},
+{jp:'アメリカ',lesson:'l1',kanji:'片假名外來語（無常用漢字）',kana:'Amerika',meaning:'美國',group:'people',ex:'アメリカから来ました。',zh:'從美國來。'},
+{jp:'ほん',lesson:'l1',kanji:'本',kana:'hon',meaning:'書',group:'things',ex:'これは日本語の本です。',zh:'這是日文書。'},
+{jp:'ノート',lesson:'l1',kanji:'片假名外來語（無常用漢字）',kana:'nōto',meaning:'筆記本',group:'things',ex:'ノートをください。',zh:'請給我筆記本。'},
+{jp:'かぎ',lesson:'l1',kanji:'鍵',kana:'kagi',meaning:'鑰匙',group:'things',ex:'かぎはここです。',zh:'鑰匙在這裡。'},
+{jp:'かばん',lesson:'l1',kanji:'鞄',kana:'kaban',meaning:'包包',group:'things',ex:'かばんはどこですか。',zh:'包包在哪裡？'},
+{jp:'きょうしつ',lesson:'l2',kanji:'教室',kana:'kyōshitsu',meaning:'教室',group:'things',ex:'教室は二階です。',zh:'教室在二樓。'},
+{jp:'としょかん',lesson:'l2',kanji:'図書館',kana:'toshokan',meaning:'圖書館',group:'things',ex:'図書館で勉強します。',zh:'在圖書館讀書。'},
+{jp:'だいがく',lesson:'l2',kanji:'大学',kana:'daigaku',meaning:'大學',group:'things',ex:'大学へ行きます。',zh:'去大學。'},
+{jp:'びょういん',lesson:'l2',kanji:'病院',kana:'byōin',meaning:'醫院',group:'things',ex:'病院はあそこです。',zh:'醫院在那裡。'},
+{jp:'げつようび',lesson:'l34',kanji:'月曜日',kana:'getsuyōbi',meaning:'星期一',group:'time',ex:'月曜日に学校へ行きます。',zh:'星期一去學校。'},
+{jp:'きのう',lesson:'l34',kanji:'昨日',kana:'kinō',meaning:'昨天',group:'time',ex:'昨日は休みでした。',zh:'昨天放假。'},
+{jp:'あした',lesson:'l34',kanji:'明日',kana:'ashita',meaning:'明天',group:'time',ex:'明日、勉強します。',zh:'明天要讀書。'},
+{jp:'ごぜん／ごご',lesson:'l34',kanji:'午前／午後',kana:'gozen / gogo',meaning:'上午／下午',group:'time',ex:'午後三時です。',zh:'下午三點。'},
+{jp:'しゅうまつ',lesson:'l34',kanji:'週末',kana:'shūmatsu',meaning:'週末',group:'time',ex:'週末は映画を見ます。',zh:'週末看電影。'},
+{jp:'いく',lesson:'l4',kanji:'行く',kana:'iku',meaning:'去',group:'action',ex:'学校へ行きます。',zh:'去學校。'},
+{jp:'くる',lesson:'l4',kanji:'来る',kana:'kuru',meaning:'來',group:'action',ex:'友だちが来ます。',zh:'朋友要來。'},
+{jp:'かえる',lesson:'l4',kanji:'帰る',kana:'kaeru',meaning:'回去；回家',group:'action',ex:'家へ帰ります。',zh:'回家。'},
+{jp:'でんしゃ',lesson:'l5',kanji:'電車',kana:'densha',meaning:'電車',group:'action',ex:'電車で大学へ行きます。',zh:'搭電車去大學。'},
+{jp:'しんかんせん',lesson:'l5',kanji:'新幹線',kana:'shinkansen',meaning:'新幹線',group:'action',ex:'新幹線に乗ります。',zh:'搭新幹線。'},
+{jp:'あるく',lesson:'l5',kanji:'歩く',kana:'aruku',meaning:'走路',group:'action',ex:'駅まで歩きます。',zh:'走到車站。'},
+{jp:'おいしい',lesson:'l2',kanji:'美味しい',kana:'oishii',meaning:'好吃的；美味的',group:'describe',ex:'このケーキはおいしいです。',zh:'這個蛋糕很好吃。'},
+{jp:'たかい',lesson:'l2',kanji:'高い',kana:'takai',meaning:'高的；（價格）貴的',group:'describe',ex:'この本は高いです。',zh:'這本書很貴。'},
+{jp:'やすい',lesson:'l2',kanji:'安い',kana:'yasui',meaning:'便宜的',group:'describe',ex:'これは安いです。',zh:'這個很便宜。'},
+{jp:'あたらしい',lesson:'l2',kanji:'新しい',kana:'atarashii',meaning:'新的',group:'describe',ex:'新しい本です。',zh:'是新書。'},
+{jp:'おもしろい',lesson:'l5',kanji:'面白い',kana:'omoshiroi',meaning:'有趣的',group:'describe',ex:'日本語はおもしろいです。',zh:'日文很有趣。'},
+{jp:'むずかしい',lesson:'l5',kanji:'難しい',kana:'muzukashii',meaning:'困難的',group:'describe',ex:'漢字は難しいです。',zh:'漢字很難。'},
+{jp:'さむい',lesson:'l5',kanji:'寒い',kana:'samui',meaning:'寒冷的（天氣）',group:'describe',ex:'今日は寒いです。',zh:'今天很冷。'}];
+const cues={
+'はじめまして':{icon:'1F44B',memory:'「哈！初次見面」先揮手打招呼。'},
+'よろしくお願いします':{icon:'1F91D',memory:'見面先握手，記住這句「請多指教」。'},
+'すみません':{icon:'1F647',memory:'「斯咪媽仙」低頭說不好意思。'},
+'ありがとうございます':{icon:'1F381',memory:'收到禮物說「阿里嘎多」：謝謝您。'},
+'わたし':{icon:'1F64B',memory:'「哇、他是我？」わたし＝我。'},
+'せんせい':{icon:'1F469-1F3EB',memory:'先生先教你，せんせい＝老師。'},
+'がくせい':{icon:'1F393',memory:'背著書包去學校，がくせい＝學生。'},
+'ともだち':{icon:'1F46B',memory:'和朋友「とも」一起出門。'},
+'アメリカ':{icon:'1F5FD',memory:'看到自由女神，想到アメリカ。'},
+'ほん':{icon:'1F4D5',memory:'捧著一本書，ほん＝書。'},
+'ノート':{icon:'1F4D3',memory:'ノート像英文 note，記筆記本。'},
+'かぎ':{icon:'1F511',memory:'拿鑰匙「卡」一聲開門，かぎ＝鑰匙。'},
+'かばん':{icon:'1F45C',memory:'「卡」片放進包，かばん＝包包。'},
+'きょうしつ':{icon:'1F3EB',memory:'「教室」的日文讀作きょうしつ。'},
+'としょかん':{icon:'1F4DA',memory:'圖書館裡「圖書看」書，としょかん。'},
+'だいがく':{icon:'1F393',memory:'「大學」的日文是だいがく。'},
+'びょういん':{icon:'1F3E5',memory:'「病院」的日文讀作びょういん。'},
+'げつようび':{icon:'1F319',memory:'げつようび有「月」字，星期一。'},
+'きのう':{icon:'1F5D3',memory:'昨日是きのう，想成「昨日 kinou」。'},
+'あした':{icon:'1F305',memory:'明天一早「啊、明日！」あした。'},
+'ごぜん／ごご':{icon:'1F558',memory:'「午前 gozen、午後 gogo」各有一個 go。'},
+'しゅうまつ':{icon:'1F389',memory:'週末收尾「休嘛」，しゅうまつ＝週末。'},
+'いく':{icon:'1F6B6',memory:'要「去」就說いく，出發！'},
+'くる':{icon:'1F6AA',memory:'朋友要「來」了：くる。'},
+'かえる':{icon:'1F3E0',memory:'青蛙 kaeru 跳回家，かえる＝回去。'},
+'でんしゃ':{icon:'1F68C',memory:'電車的「電」提示でんしゃ。'},
+'しんかんせん':{icon:'1F684',memory:'「新幹線」日文也叫しんかんせん。'},
+'あるく':{icon:'1F6B6',memory:'走在路上「阿路 ku」，あるく＝走路。'},
+'おいしい':{icon:'1F370',memory:'「喔伊西！」好吃到忍不住稱讚。'},
+'たかい':{icon:'1F3F7',memory:'價錢太高「他開」價，たかい＝貴／高。'},
+'やすい':{icon:'1FA99',memory:'便宜就安心「呀，すい！」やすい＝便宜。'},
+'あたらしい':{icon:'2728',memory:'打開新物品：「啊，新的！」あたらしい。'},
+'おもしろい':{icon:'1F3AD',memory:'面白い的日文讀作おもしろい，真有趣。'},
+'むずかしい':{icon:'1F9E9',memory:'「嗯，這真難」むずかしい＝困難。'},
+'さむい':{icon:'1F9E3',memory:'冷得發抖「沙木衣」，さむい＝寒冷。'},
+};
+const cards=document.querySelector('#cards'),count=document.querySelector('#count');function render(group='all'){const list=group==='all'?words:words.filter(w=>w.lesson===group);count.textContent=`${group==='all'?'ALL LESSONS':({l1:'LESSON 01 · P.08–11',l2:'LESSON 02 · P.12–15',l34:'LESSON 03–04 · P.16–21',l4:'LESSON 04 · P.22–24',l5:'LESSON 05 · P.25–27'}[group])} / ${list.length} WORDS`;cards.innerHTML=list.map((w,i)=>`<article class="word"><div class="lesson-tag">${({l1:'第一課',l2:'第二課',l34:'第三・四課',l4:'第四課',l5:'第五課'}[w.lesson])}</div><button class="sound" aria-label="播放 ${w.jp}" data-say="${w.jp}">▶</button><div class="illustration"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji@16.0.0/color/svg/${cues[w.jp].icon}.svg" alt="${w.meaning}插畫"></div><div class="jp" lang="ja">${w.jp}</div><div class="kana">假名・${w.kana}</div><div class="kanji" lang="ja">漢字・<em>${w.kanji||'通常以假名書寫'}</em></div><div class="meaning">${w.meaning}</div><div class="memory"><b>諧音聯想</b>${cues[w.jp].memory}</div><div class="example" lang="ja">${w.ex}<span>${w.zh}</span></div></article>`).join('');document.querySelectorAll('.sound').forEach(b=>b.onclick=()=>speak(b.dataset.say))}function speak(text){if('speechSynthesis'in window){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='ja-JP';speechSynthesis.speak(u)}else document.querySelector('#prompt').textContent='此瀏覽器目前不支援語音播放。'}document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));b.classList.add('active');render(b.dataset.group)});document.querySelector('#quiz').onclick=()=>{const w=words[Math.floor(Math.random()*words.length)];document.querySelector('#prompt').textContent=`「${w.jp}」是什麼意思？答案：${w.meaning}`;speak(w.jp)};render();
+</script></body></html>
